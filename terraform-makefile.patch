@@ -1,0 +1,10 @@
+--- terraform-0.8.6/Makefile.am.old	Mon Jan 28 03:12:42 2002
++++ terraform-0.8.6/Makefile.am	Thu Feb 21 22:46:44 2002
+@@ -1,6 +1,6 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = intl po macros src data desktop-links docs help
++SUBDIRS = intl po macros src data docs help
+ 
+ install-data-local:
+ 	@$(NORMAL_INSTALL)
