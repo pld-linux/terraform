@@ -56,8 +56,6 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Graphics}
 install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_applnkdir}/Graphics/%{name}.desktop
 install desktop-links/terraform.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf AUTHORS ChangeLog
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -65,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz docs/*.sgml
+%doc AUTHORS ChangeLog docs/*.sgml
 %attr(755,root,root) %{_bindir}/terraform
 %{_datadir}/terraform
 %{_applnkdir}/Graphics/*
