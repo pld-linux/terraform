@@ -1,0 +1,11 @@
+diff -Nru terraform-0.9.0.bak/configure.in terraform-0.9.0/configure.in
+--- terraform-0.9.0.bak/configure.in	2002-04-24 17:27:11.000000000 +0200
++++ terraform-0.9.0/configure.in	2003-05-07 12:08:04.000000000 +0200
+@@ -129,7 +129,6 @@
+ data/include/skies/Makefile
+ data/include/skies/include/Makefile
+ data/include/water/Makefile
+-data/include/water/Makefile
+ data/objects/Makefile
+ desktop-links/Makefile
+ help/Makefile
