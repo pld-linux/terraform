@@ -18,7 +18,7 @@ program, giving you the ability to generate random terrain and transform it.
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%prefix
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
