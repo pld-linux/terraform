@@ -8,6 +8,7 @@ Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
 Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-acfix.patch
+Patch2:		%{name}-acfix2.patch
 URL:		http://terraform.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f missing
