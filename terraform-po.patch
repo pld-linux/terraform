@@ -1,15 +1,18 @@
 diff -u terraform-0.9.0/po.orig/nl.po terraform-0.9.0/po/nl.po
 --- terraform-0.9.0/po.orig/nl.po	Wed Apr 24 17:27:11 2002
 +++ terraform-0.9.0/po/nl.po	Wed Aug  4 00:34:29 2004
-@@ -1,4 +1,4 @@
--# SOME DESCRIPTIVE TITLE.
-+B# SOME DESCRIPTIVE TITLE.
- # Copyright (C) YEAR Free Software Foundation, Inc.
- # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+@@ -4,14 +4,14 @@
  #
-@@ -10,8 +10,8 @@
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: PACKAGE VERSION\n"
++"Project-Id-Version: terraform 0.9.0\n"
+ "POT-Creation-Date: 2002-01-02 22:56+0100\n"
+-"PO-Revision-Date: 2001-11-25 HO:MI+ZONE\n"
++"PO-Revision-Date: 2004-04-24 17:27+0100\n"
  "Last-Translator: Koos Jan Niesink <koos_jan@hotpop.com>\n"
- "Language-Team: LANGUAGE <LL@li.org>\n"
+-"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language-Team: Dutch <nl@li.org>\n"
  "MIME-Version: 1.0\n"
 -"Content-Type: text/plain; charset=CHARSET\n"
 -"Content-Transfer-Encoding: ENCODING\n"
