@@ -2,7 +2,7 @@ Summary:	An interactive fractal landscape generator
 Summary(pl):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
 Version:	0.9.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
 Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-acfix2.patch
+Patch3:		%{name}-desktop.patch
 URL:		http://terraform.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,6 +36,7 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 rm -f missing
@@ -50,12 +52,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Graphics}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_applnkdir}/Graphics/%{name}.desktop
+install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 install desktop-links/terraform.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %find_lang %{name} --with-gnome
@@ -68,5 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog docs/*.sgml
 %attr(755,root,root) %{_bindir}/terraform
 %{_datadir}/terraform
-%{_applnkdir}/Graphics/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
