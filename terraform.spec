@@ -6,7 +6,7 @@ License:	GPL
 Group:		Graphics
 Source:		terraform-%{ver}.tar.gz
 URL:		http://212.187.12.197/RNG/terraform/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 
