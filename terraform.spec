@@ -2,7 +2,7 @@ Summary:	An interactive fractal landscape generator
 Summary(pl):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
 Version:	0.9.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
