@@ -7,14 +7,15 @@ License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/terraform/%{name}-%{version}.tar.gz
 Patch0:		%{name}-makefile.patch
+Patch1:		%{name}-acfix.patch
 URL:		http://terraform.sourceforge.net/
-BuildRequires:	gtk+-devel
-BuildRequires:	gnome-print-devel
-BuildRequires:	gnome-libs-devel
-BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
+BuildRequires:	gnome-print-devel
+BuildRequires:	gtk+-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,11 +33,12 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
-gettextize -c -f
+%{__gettextize}
 aclocal -I macros
 %{__autoconf}
 %{__automake}
