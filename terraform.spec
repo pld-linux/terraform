@@ -4,7 +4,7 @@ Version:	0.4.4
 Release:	1
 License:	GPL
 Group:		Graphics
-Source:		terraform-%{ver}.tar.gz
+Source:		terraform-%{version}.tar.gz
 URL:		http://212.187.12.197/RNG/terraform/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
