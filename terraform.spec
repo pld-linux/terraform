@@ -1,9 +1,11 @@
 Summary:	An interactive fractal landscape generator
+Summary(pl):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
 Version:	0.4.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
+Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://212.187.12.197/RNG/terraform/
@@ -21,7 +23,7 @@ transform it.
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%prefix
+CFLAGS="%{rpmcflags}" ./configure --prefix=%prefix
 %{__make}
 
 %install
