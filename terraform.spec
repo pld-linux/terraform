@@ -19,8 +19,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Terraform is an interactive height field generation and manipulation
