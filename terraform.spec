@@ -39,7 +39,7 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 %build
 rm -f missing
 %{__gettextize}
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure \
