@@ -2,7 +2,7 @@ Summary:	An interactive fractal landscape generator
 Summary(pl):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
 Version:	0.9.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
@@ -11,6 +11,7 @@ Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-acfix2.patch
 Patch3:		%{name}-desktop.patch
+Patch4:		%{name}-po.patch
 URL:		http://terraform.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -37,6 +38,7 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 rm -f missing
