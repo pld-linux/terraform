@@ -34,6 +34,7 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 %patch -p1
 
 %build
+rm -f missing
 gettextize -c -f
 aclocal -I macros
 autoconf
@@ -46,11 +47,11 @@ automake -a -c -f
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}}
 install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_applnkdir}/%{name}.desktop
 install desktop-links/terraform.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
