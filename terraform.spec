@@ -1,7 +1,7 @@
 Summary:	An interactive fractal landscape generator
 Summary(pl):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
-Version:	0.8.6
+Version:	0.9.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
@@ -15,6 +15,7 @@ BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	gettext-devel
+BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -47,23 +48,25 @@ automake -a -c -f
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Graphics}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_applnkdir}/%{name}.desktop
+install desktop-links/Terraform.desktop $RPM_BUILD_ROOT%{_applnkdir}/Graphics/%{name}.desktop
 install desktop-links/terraform.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf AUTHORS ChangeLog docs/{FAQ,README,UsersGuide}.txt
+gzip -9nf AUTHORS ChangeLog
+
+%find_lang %{name} --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz docs/*.gz
+%doc *.gz docs/*.sgml
 %attr(755,root,root) %{_bindir}/terraform
 %{_datadir}/terraform
-%{_applnkdir}/*
+%{_applnkdir}/Graphics/*
 %{_pixmapsdir}/*
