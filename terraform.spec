@@ -38,8 +38,8 @@ Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
 rm -f missing
 gettextize -c -f
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--disable-sgmltools
 	# don't work with our sgml-tools
