@@ -12,5 +12,5 @@
  MultipleArgs=false
  Type=Application
 +Categories=GTK;GNOME;Graphics;
-+Encodinf=UTF-8
++Encoding=UTF-8
 +# vi: encoding=utf-8
