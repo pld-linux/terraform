@@ -1,0 +1,16 @@
+--- terraform-0.9.0/desktop-links/Terraform.desktop.orig	2004-07-05 00:23:34.105593480 +0200
++++ terraform-0.9.0/desktop-links/Terraform.desktop	2004-07-05 00:25:13.848430264 +0200
+@@ -4,9 +4,13 @@
+ Comment=Terrain generation program
+ Comment[es]=Una programa con que hacer mundos
+ Comment[hu]=Egy terep gener·tor program
++Comment[pl]=Interaktywny generator krajobraz√≥w fraktalnych
+ Exec=terraform 
+ TryExec=terraform
+ Icon=terraform.png
+ Terminal=false
+ MultipleArgs=false
+ Type=Application
++Categories=GTK;GNOME;Graphics;
++Encodinf=UTF-8
++# vi: encoding=utf-8
