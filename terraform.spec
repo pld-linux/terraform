@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
+# Source0-md5:	a1af0cbb6719b49b30d326df9d06434a
 Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-acfix2.patch
