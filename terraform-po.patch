@@ -1,0 +1,20 @@
+diff -u terraform-0.9.0/po.orig/nl.po terraform-0.9.0/po/nl.po
+--- terraform-0.9.0/po.orig/nl.po	Wed Apr 24 17:27:11 2002
++++ terraform-0.9.0/po/nl.po	Wed Aug  4 00:34:29 2004
+@@ -1,4 +1,4 @@
+-# SOME DESCRIPTIVE TITLE.
++B# SOME DESCRIPTIVE TITLE.
+ # Copyright (C) YEAR Free Software Foundation, Inc.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ #
+@@ -10,8 +10,8 @@
+ "Last-Translator: Koos Jan Niesink <koos_jan@hotpop.com>\n"
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=CHARSET\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Type: text/plain; charset=iso-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: src/main.c:75
+ msgid "Run terrain chooser upon startup"
