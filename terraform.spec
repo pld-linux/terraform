@@ -5,7 +5,7 @@ Version:	0.9.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/terraform/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/terraform/%{name}-%{version}.tar.gz
 Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-acfix.patch
 URL:		http://terraform.sourceforge.net/
@@ -18,7 +18,6 @@ BuildRequires:	gnome-print-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Terraform is an interactive height field generation and manipulation
