@@ -5,8 +5,6 @@ Version:	0.4.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/terraform/%{name}-%{version}.tar.gz
 URL:		http://terraform.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
