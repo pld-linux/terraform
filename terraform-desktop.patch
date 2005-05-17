@@ -1,9 +1,14 @@
 --- terraform-0.9.0/desktop-links/Terraform.desktop.orig	2004-07-05 00:23:34.105593480 +0200
 +++ terraform-0.9.0/desktop-links/Terraform.desktop	2004-07-05 00:25:13.848430264 +0200
-@@ -4,9 +4,13 @@
+@@ -1,12 +1,16 @@
+ [Desktop Entry]
+ Name=Terraform
+-Name[ja]=ŽÃŽ°Ž×ŽÌŽ«ŽÓ
++Name[ja]=ï¾ƒï½°ï¾—ï¾Œï½«ï¾“
  Comment=Terrain generation program
  Comment[es]=Una programa con que hacer mundos
- Comment[hu]=Egy terep generátor program
+-Comment[hu]=Egy terep generátor program
++Comment[hu]=Egy terep generÃ¡tor program
 +Comment[pl]=Interaktywny generator krajobrazÃ³w fraktalnych
  Exec=terraform 
  TryExec=terraform
