@@ -72,5 +72,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog docs/*.sgml
 %attr(755,root,root) %{_bindir}/terraform
 %{_datadir}/terraform
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
