@@ -1,5 +1,5 @@
 Summary:	An interactive fractal landscape generator
-Summary(pl.UTF-8):   Interaktywny generator krajobrazów fraktalnych
+Summary(pl.UTF-8):	Interaktywny generator krajobrazów fraktalnych
 Name:		terraform
 Version:	0.9.0
 Release:	5
