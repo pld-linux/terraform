@@ -1,5 +1,5 @@
 Summary:	An interactive fractal landscape generator
-Summary(pl):	Interaktywny generator krajobrazów fraktalnych
+Summary(pl.UTF-8):   Interaktywny generator krajobrazÃ³w fraktalnych
 Name:		terraform
 Version:	0.9.0
 Release:	5
@@ -28,9 +28,9 @@ Terraform is an interactive height field generation and manipulation
 program, giving you the ability to generate random terrain and
 transform it.
 
-%description -l pl
-Terraform to interaktywny program do generowania i obrabiania terenów.
-Pozwala wygenerowaæ losowy teren i przetransformowaæ go.
+%description -l pl.UTF-8
+Terraform to interaktywny program do generowania i obrabiania terenÃ³w.
+Pozwala wygenerowaÄ‡ losowy teren i przetransformowaÄ‡ go.
 
 %prep
 %setup -q
