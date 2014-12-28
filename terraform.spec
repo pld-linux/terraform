@@ -16,7 +16,7 @@ URL:		http://terraform.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gnome-print-devel
 BuildRequires:	gtk+-devel
